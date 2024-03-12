@@ -15,8 +15,11 @@ export default function App() {
       return;
     }
     const newToDos = Object.assign(
+      //비어있는 객체
       {},
+      //이전 객체
       toDos,
+      //새로운 객체
       {[Date.now()]:{text, work: working}}
       )
     setToDos(newToDos);
